@@ -32,13 +32,19 @@ body {
     position: absolute;
     top: 50%;
     left: 0;
-    right: 0;
     transform: translateY(-50%);
     height: 4px;
     background-color: #3498db;
     z-index: -1;
     transition: width 0.3s;
     width: 0%;
+}
+
+.line {
+    width: 30px;
+    height: 5px;
+	background-color: #ddd;
+    transition: background-color 0.3s;
 }
 
 .circle {
@@ -58,6 +64,10 @@ body {
 .circle.active {
     border-color: #3498db;
     color: #3498db;
+}
+
+.line.active {
+    background-color: #3498db;
 }
 
 .btn {
